@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    font-family: gilroy;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 30% 50% 20%;
+}
+.left-top-left{
+    /* background-color: antiquewhite; */
+    padding: 40px;
+}
+#shape{
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    transform: rotate(45deg);
+}
+.left-top-right{
+    justify-self: right;
+    padding: 40px;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+.left-top-right h4{
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: black;
+}
+
+.left-center{
+    /* background-color: blue; */
+    grid-column: 1/3;
+    padding: 0px 40px;
+    align-self: center;
+}
+.left-center h1{
+    font-size: 6vw;
+    line-height: 5.6vw;
+    font-weight: 50;
+    text-transform: uppercase;
+}
+.left-center h1:nth-child(2n){
+    text-align: center;
+}
+.left-bottom{
+    /* background-color: blueviolet; */
+    grid-column: 1/3;
+    padding: 20px 40px;
+}
+.left-bottom p{
+    width: 70%;
+    color: #333;
+    font-size: 14px;
+}
+.right{
+    /* background-color: darkgreen; */
+    grid-column: 3;
+    grid-row: 1/4;
+    padding: 40px;
+}
+.right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+@media (max-width:600px){
+
+    #main{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 13% 35% 11% 37%;
+    }
+    .left-top-left{
+        /* background-color: antiquewhite; */
+        padding: 20px;
+    }
+    .left-top-right{
+        padding: 20px;
+    }
+    .left-top-right h5{
+        display: none;
+    }
+    
+    .left-center{
+        /* background-color: blue; */
+        grid-column: 1/4;
+        align-self: normal;
+    }
+    .left-center h1{
+        font-size: 17vw;
+        line-height: 14.6vw;
+
+    }
+
+    .left-bottom{
+        /* background-color: blueviolet; */
+        padding: 10px 20px;
+    }
+    .left-bottom p{
+        width: 100%;
+    }
+    .right{
+        /* background-color: darkgreen; */
+        grid-column: 1/4;
+        grid-row: 4;
+        padding: 20px;
+    }
+    .right img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    } 
+}
